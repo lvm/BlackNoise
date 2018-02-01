@@ -1,0 +1,6 @@
+(
+\name: "BlackNoise",
+\summary: "A BlackNoise UGen.",
+\author: "Mauro Lizaur",
+\version: 0.1,
+)

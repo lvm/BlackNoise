@@ -1,0 +1,35 @@
+class:: BlackNoise
+summary:: Black Noise.
+related:: Classes/Silent, Classes/ClipNoise, Classes/GrayNoise, Classes/BrownNoise, Classes/PinkNoise, Classes/WhiteNoise
+categories::  UGens>Generators>Stochastic
+
+Description::
+Generates noise which has mostly no power at any frequency with the exception of tiny bits of noise that go beyond the audible spectrum by the human ear.
+
+classmethods::
+
+method::ar
+
+argument::mul
+Output will be multiplied by this value.
+
+argument::add
+This value will be added to the output.
+
+Examples::
+
+compare:
+code::
+{ BlackNoise.ar(0.1) }.play;
+{ WhiteNoise.ar(0.1) }.play;
+::
+
+Black noise as a frequency modulator:
+code::
+{ SinOsc.ar(BlackNoise.ar(100, 200)) * 0.1 }.play;
+::
+
+filtered Black noise:
+code::
+{ BPF.ar(BlackNoise.ar(0.1.dup), MouseX.kr(40, 17000, 1), 0.2) }.play;
+::
