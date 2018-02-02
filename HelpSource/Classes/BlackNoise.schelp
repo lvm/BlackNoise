@@ -4,7 +4,7 @@ related:: Classes/Silent, Classes/ClipNoise, Classes/GrayNoise, Classes/BrownNoi
 categories::  UGens>Generators>Stochastic
 
 Description::
-Generates noise which has mostly no power at any frequency with the exception of tiny bits of noise that go beyond the audible spectrum by the human ear.
+Generates noise whose spectrum has predominately zero power level over all frequencies except for a few narrow bands or spikes that go beyond the audible spectrum by the human ear.
 
 classmethods::
 
